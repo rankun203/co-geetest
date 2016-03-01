@@ -25,7 +25,7 @@
   "bugs": "https://github.com/rankun203/co-geetest/issues",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rankun203/co-geetest.git"
+    "url": "git@github.com:rankun203/co-geetest.git"
   },
   "license": "MIT",
   "engines": {
