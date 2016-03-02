@@ -1,17 +1,19 @@
 {
   "name": "co-geetest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
-    "email": "rankun203@gmail.com",
-    "name": "rankun203",
-    "url": "http://blog.rankun.org"
+    "email": "info@youdar.net",
+    "name": "youdar",
+    "url": "http://youdar.net"
   },
   "description": "geetest wrapper for co, 极验验证 co/koa 兼容库",
   "keywords": [
     "geetest",
+    "Captcha",
     "verify",
     "code",
     "verification",
+    "youdar",
     "wrapper",
     "jiyan",
     "co",
@@ -27,6 +29,13 @@
     "type": "git",
     "url": "git@github.com:rankun203/co-geetest.git"
   },
+  "maintainers": [
+    {
+      "name": "rankun203",
+      "email": "rankun203@gmail.com",
+      "url": "http://blog.rankun.org"
+    }
+  ],
   "license": "MIT",
   "engines": {
     "iojs": ">= 1.0.0",
