@@ -19,7 +19,7 @@
   ],
   "homepage": "https://github.com/rankun203/co-geetest",
   "dependencies": {
-    "geetest": "^0.5.3",
+    "geetest": "^0.5.4",
     "co": "^4.6.0"
   },
   "bugs": "https://github.com/rankun203/co-geetest/issues",
