@@ -7,7 +7,6 @@
 let co      = require('co'),
     geetest = require('geetest/gt-sdk'),
 
-    methods = {}, // cached methods
     geeInstance;  // cached geetest instance
 
 /**
@@ -20,24 +19,27 @@ function init(key, id) {
   return this;
 }
 
-['register', 'validate'].forEach(function each(method) {
+module.exports.init     = init;
+module.exports.register = function* () {
+  return yield co(function* () {
 
-  methods[method] = function* () {
-
-    return yield co(function* () {
-
-      return new Promise(function later(ok, fail) {
-
-        geeInstance[method](function later1(err, body) {
-
-          if (err) fail(err);
-          ok(body);
-        });
+    return new Promise(function later(ok, fail) {
+      geeInstance.register(function later1(err, body) {
+        if (err) fail(err);
+        ok(body);
       });
     });
-  };
-});
+  });
+};
 
-module.exports.init     = init;
-module.exports.register = methods['register'];
-module.exports.validate = methods['validate'];
+module.exports.validate = function* (config) {
+  return yield co(function* () {
+
+    return new Promise(function later(ok, fail) {
+      geeInstance.validate(config, function later1(err, body) {
+        if (err) fail(err);
+        ok(body);
+      });
+    });
+  });
+};
