@@ -1,6 +1,6 @@
 # co-geetest 极验验证 co 兼容库
 
-[![NPM](https://nodei.co/npm/co-geetest.png)](https://nodei.co/npm/co-geetest/)
+[![NPM](https://nodei.co/npm/co-geetest.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/co-geetest/)
 
 ### Installation
 
